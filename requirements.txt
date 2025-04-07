@@ -7,3 +7,5 @@ matplotlib
 docx2txt
 PyPDF2
 seaborn
+fpdf
+plotly
