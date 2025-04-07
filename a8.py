@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from io import BytesIO, StringIO
 from fpdf import FPDF
-from matplotlib.backends.backend_agg import RendererAgg
 import plotly.express as px
 from PIL import Image
 import tempfile
@@ -20,8 +19,7 @@ from sklearn.metrics import (
     mean_squared_error, r2_score
 )
 
-st.set_page_config(page_title="Employee Analyzer a8", layout="wide")
-_lock = RendererAgg.lock
+st.set_page_config(page_title="Employee Analyzer", layout="wide")
 
 page = st.sidebar.selectbox("📂 Select Page", ["Preprocessing", "Model View", "Visualizations"])
 
@@ -131,16 +129,21 @@ if uploaded_file:
         if st.button("📄 Download Visualization Report"):
             temp_dir = tempfile.mkdtemp()
             pdf = FPDF()
+            pdf.set_auto_page_break(auto=True, margin=15)
             pdf.add_page()
+            pdf.set_font("Arial", 'B', 16)
+            pdf.cell(0, 10, f"Employee Visualization Report", ln=True, align='C')
+            pdf.ln(10)
             pdf.set_font("Arial", size=12)
-            pdf.multi_cell(0, 10, f"KPI Summary for {num_col}: Mean={df[num_col].mean():.2f}, Median={df[num_col].median():.2f}, Std={df[num_col].std():.2f}")
+            pdf.multi_cell(0, 10, f"KPI Summary for {num_col}:\nMean = {df[num_col].mean():.2f}, Median = {df[num_col].median():.2f}, Std = {df[num_col].std():.2f}")
+            pdf.ln(5)
 
             for i, config in enumerate(st.session_state.graph_configs):
                 plot_type = config['plot_type']
                 column = config['column']
                 pdf.add_page()
-                pdf.set_font("Arial", size=12)
-                pdf.multi_cell(0, 10, f"Graph {i+1}: {plot_type} for {column}")
+                pdf.set_font("Arial", 'B', 14)
+                pdf.cell(0, 10, f"Graph {i+1}: {plot_type} for {column}", ln=True)
 
                 if plot_type == "Treemap":
                     numeric_for_treemap = df_numeric.columns[0]
@@ -173,7 +176,9 @@ if uploaded_file:
                 pdf.image(fig_path, w=180)
 
                 if st.session_state.get(f"graph_summary_{i}"):
-                    pdf.multi_cell(0, 10, st.session_state[f"graph_summary_{i}"])
+                    pdf.ln(5)
+                    pdf.set_font("Arial", size=11)
+                    pdf.multi_cell(0, 10, f"Summary:\n{st.session_state[f'graph_summary_{i}']}")
 
             pdf_bytes = pdf.output(dest='S').encode('latin-1')
             st.download_button(
