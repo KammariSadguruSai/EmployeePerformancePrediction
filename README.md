@@ -6,8 +6,8 @@ Predicting employee performance and attrition using Machine Learning models — 
 
 ## 👨‍💻 Authors
 
-- **Kammari Sadguru Sai** (23955A6715)  
-- **Eerla Venkatesh** (23955A6718)  
+- **[Kammari Sadguru Sai](https://www.linkedin.com/in/kammarisadgurusai)** (23955A6715)  
+- **[Eerla Venkatesh](https://www.linkedin.com/in/eerla-venkatesh-9a95a6292)** (23955A6718)  
 Department of Computer Science and Engineering (Data Science)  
 *Institute of Aeronautical Engineering, Dundigal, Hyderabad, Telangana.*
 
@@ -21,7 +21,6 @@ Department of Computer Science and Engineering (Data Science)
 5. [Deployment](#5-🚀-deployment)  
 6. [Resources](#📦-resources)  
 7. [How to Use](#🙌-how-to-use)  
-8. [Feedback & Contributions](#💬-feedback--contributions)  
 
 ---
 
