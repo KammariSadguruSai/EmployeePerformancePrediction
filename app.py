@@ -14,7 +14,7 @@ from sklearn.metrics import (
     mean_squared_error, r2_score
 )
 
-st.set_page_config(page_title="Employee Analyzer a6", layout="wide")
+st.set_page_config(page_title="Employee Analyzer", layout="wide")
 
 page = st.sidebar.selectbox("📂 Select Page", ["Preprocessing", "Model View", "Visualizations"])
 
