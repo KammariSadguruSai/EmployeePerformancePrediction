@@ -39,7 +39,7 @@ Employee attrition is a major concern for organizations. This project leverages 
 - **Feature selection** done using a **correlation heatmap**.
 
 📸 **Screenshot: Preprocessing**  
-![Preprocessing Screenshot](images/Screenshot 2025-04-12 222650.png)
+![Preprocessing Screenshot](images/preprocessing.png)
 
 ---
 
@@ -54,7 +54,7 @@ Employee attrition is a major concern for organizations. This project leverages 
 - **Regression:** RMSE (Root Mean Squared Error), R² Score
 
 📸 **Screenshot: Model Training**  
-![Model Training Screenshot](path/to/model_training_screenshot.png)
+![Model Training Screenshot](images/model.png)
 
 ---
 
@@ -69,7 +69,7 @@ An interactive dashboard built using **Streamlit** for intuitive exploration and
 - Clear **correlation visuals** between features and target labels
 
 📸 **Screenshot: Visualization**  
-![Visualization Screenshot](path/to/visualization_screenshot.png)
+![Visualization Screenshot](images/visualization.png)
 
 ---
 
