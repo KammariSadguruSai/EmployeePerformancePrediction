@@ -75,7 +75,7 @@ An interactive dashboard built using **Streamlit** for intuitive exploration and
 
 ## 5. 🚀 Deployment
 
-- 🌐 **Live App:** [employee-performance-app.streamlit.app](https://employee-performance-app.streamlit.app)  
+- 🌐 **Live App:** [empguess.streamlit.app](https://empguess.streamlit.app)  
 - 💻 **GitHub Repository:** [github.com/KammariSadguruSai/EmployeePerformancePrediction](https://github.com/KammariSadguruSai/EmployeePerformancePrediction)
 
 ---
