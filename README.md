@@ -82,7 +82,7 @@ An interactive dashboard built using **Streamlit** for intuitive exploration and
 
 ## 📦 Resources
 
-- 📁 **Dataset Used:** `employeeattritionandengagement`
+- 📁 **Dataset Used:** `[kaggle/Attrition](https://www.kaggle.com/datasets/ashrakatsaeed/attrition)`
 
 ---
 
