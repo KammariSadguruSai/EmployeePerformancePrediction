@@ -93,3 +93,9 @@ An interactive dashboard built using **Streamlit** for intuitive exploration and
    ```bash
    git clone https://github.com/KammariSadguruSai/EmployeePerformancePrediction.git
    cd EmployeePerformancePrediction
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+3. **Run the Streamlit application**
+   ```bash
+   streamlit run app.py
