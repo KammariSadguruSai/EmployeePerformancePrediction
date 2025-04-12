@@ -39,7 +39,7 @@ Employee attrition is a major concern for organizations. This project leverages 
 - **Feature selection** done using a **correlation heatmap**.
 
 📸 **Screenshot: Preprocessing**  
-![Preprocessing Screenshot](path/to/preprocessing_screenshot.png)
+![Preprocessing Screenshot](images/Screenshot 2025-04-12 222650.png)
 
 ---
 
